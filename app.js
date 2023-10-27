@@ -24,7 +24,7 @@ app.get('/tico', (req, res) => {
 
 app.get('/pokemons', (req, res) => {
   console.log("Just got a request!")
-  res.send('Pikachu','Butterfree','Pidgeot','Bulbasaur','Charizard','Squirtle','Kingler','Primeape')
+  res.send('Pikachu, Butterfree, Pidgeot, Bulbasaur, Charizard, Squirtle, Kingler, Primeape')
 })
 
 app.post("/series", (req, res) => {
