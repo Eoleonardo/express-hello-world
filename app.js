@@ -34,6 +34,12 @@ app.get('/pokemons', (req, res) => {
   'Primeape')
 })
 
+app.post("/series", (req, res) => {
+  const seriesFavoritas = ["flash", "loki", "supernatural"];
+  res.json({ series: seriesFavoritas });
+});
+
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
