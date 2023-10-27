@@ -17,9 +17,21 @@ app.get('/meunome', (req, res) => {
   res.send('LEONARDO NASCIEMENTO DA SILVA')
 })
 
-app.get('/tico', (rqe, res) => {
+app.get('/tico', (req, res) => {
   console.log("Just got a request!")
   res.send('teco')
+})
+
+app.get('/pokemons', (req, res) => {
+  console.log("Just got a request!")
+  res.send('Pikachu',
+  'Butterfree',
+  'Pidgeot',
+  'Bulbasaur',
+  'Charizard',
+  'Squirtle',
+  'Kingler',
+  'Primeape')
 })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
